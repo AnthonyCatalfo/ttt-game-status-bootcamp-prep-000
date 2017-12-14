@@ -18,12 +18,9 @@ def won?(board)
 WIN_COMBINATIONS.detect do |j|
 
    (board[j[0]] === board[j[1]] && board[j[1]]===board[j[2]]) && (position_taken?(board,j[0] ))
-     
+
 end
 end
 def full?(board)
   board.detect{|i| !(position_taken?(board,i ))}
 end
-
-
-  
