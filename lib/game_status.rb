@@ -22,5 +22,9 @@ WIN_COMBINATIONS.detect do |j|
 end
 end
 def full?(board)
-  position_taken?(board.detect{|i| !(position_taken?(board,board.find_index(i) ))})
-end
+
+    if (board.index(" ") || board.index(" "))
+      return false
+    end
+      return true
+   end
