@@ -21,3 +21,9 @@ WIN_COMBINATIONS.detect do |j|
      
 end
 end
+def full?(board)
+  board.detect{|i| !(position_taken?(board,i ))}
+end
+
+
+  
